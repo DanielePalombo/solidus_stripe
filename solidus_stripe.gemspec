@@ -34,5 +34,31 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activemerchant', '>= 1.105'
   spec.add_dependency 'rexml'
 
+  spec.add_dependency 'stripe', '~> 10.7'
+
+  spec.add_development_dependency 'redcarpet' # used by yard
+  spec.add_development_dependency 'rubocop', '~> 1.0'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.5'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.3'
+  spec.add_development_dependency 'rubocop-rspec', '~> 2.0'
   spec.add_development_dependency 'solidus_dev_support', '~> 2.5'
+  spec.add_development_dependency 'yard'
+
+  spec.post_install_message = <<~TXT
+    ------------------------------------------------------------------------
+            ⚠️ **WARNING: `solidus_stripe` & `solidus_frontend** ⚠️
+    ------------------------------------------------------------------------
+
+    If you need support for `solidus_frontend` please add `< 5`
+    as a version requirement in your gemfile:
+
+    `gem 'solidus_stripe', '< 5'`
+
+    or if your tracking the github version please switch to
+    the `v4` branch:
+
+    `gem 'solidus_stripe', github: 'solidusio/solidus_stripe', branch: 'v4'`
+
+    ------------------------------------------------------------------------
+  TXT
 end
