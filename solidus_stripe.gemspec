@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activemerchant', '>= 1.105'
   spec.add_dependency 'rexml'
 
-  spec.add_dependency 'stripe', '>= 8.0'
+  spec.add_dependency 'stripe', '~> 12'
 
   spec.add_development_dependency 'redcarpet' # used by yard
   spec.add_development_dependency 'rubocop', '~> 1.0'
