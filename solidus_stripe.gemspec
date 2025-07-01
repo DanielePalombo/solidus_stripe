@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activemerchant', '>= 1.105'
   spec.add_dependency 'rexml'
 
-  spec.add_dependency 'stripe', '~> 12'
+  spec.add_dependency 'stripe', '~> 15'
 
   spec.add_development_dependency 'redcarpet' # used by yard
   spec.add_development_dependency 'rubocop', '~> 1.0'
@@ -43,7 +43,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rspec', '~> 2.0'
   spec.add_development_dependency 'solidus_dev_support', '~> 2.5'
   spec.add_development_dependency 'yard'
-  spec.add_development_dependency 'solidus_dev_support', '~> 2.5'
 
   spec.post_install_message = <<~TXT
     ------------------------------------------------------------------------
